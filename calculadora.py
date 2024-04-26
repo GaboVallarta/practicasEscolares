@@ -13,8 +13,8 @@ def elevar(a,b):
         r=r*a
     return r
 
-
-x=int(input("elige"))
+print("elige")
+x=int(input(""))
 while True:
     if x==1:
         a=int(input("primer numero "))
