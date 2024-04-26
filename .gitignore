@@ -1,3 +1,6 @@
-*.exe;
-*.db;
-*.json;
+*.exe
+*.db
+*.json
+*.sqlite
+*.wsuo
+*vsidx
