@@ -27,6 +27,13 @@ for i in range(195):
     image_files.append(filename)
 
 
+# Añadir texto
+turtle.penup()
+turtle.goto(0, 300)  # Posicionar el texto en el centro
+turtle.color("white")  # Cambiar color del texto
+turtle.write("¡Hola, Turtle!", align="center", font=("Arial", 24, "normal"))
+
+
 
 turtle.shape('turtle')
 turtle.pencolor('orangered')
@@ -49,3 +56,7 @@ for i in range(300):
     image_files.append(filename)
 
 done()
+
+
+
+
