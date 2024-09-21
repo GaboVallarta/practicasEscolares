@@ -1,9 +1,13 @@
 from turtle import*
 import turtle
+import time
 import math
 
 screen = turtle.Screen()
-screen.tracer(0)  
+
+
+
+letras=turtle.Turtle()
 
 tracer(2)
 h=0
@@ -12,7 +16,7 @@ pensize(2)
 color('yellow')
 
 
-image_files = []
+#image_files = []
 
 for i in range(195):
     h+=0.006
@@ -22,16 +26,18 @@ for i in range(195):
     rt(14)
     forward(i*0.1)
     circle(i*0.3,120)
-    filename = f"frame_{i:03d}.gif"
-    screen.getcanvas().postscript(file=f"frame_{i:03d}.ps")
-    image_files.append(filename)
+    #filename = f"frame_{i:03d}.gif"
+    #screen.getcanvas().postscript(file=f"frame_{i:03d}.ps")
+   #image_files.append(filename)
 
 
-# Añadir texto
+
 turtle.penup()
-turtle.goto(0, 300)  # Posicionar el texto en el centro
-turtle.color("white")  # Cambiar color del texto
-turtle.write("¡Hola, Turtle!", align="center", font=("Arial", 24, "normal"))
+letras.goto(0, 250)  
+letras.color("white")  
+letras.write("Pa ti, sashis", align="center", font=("Arial", 24, "normal"))
+letras.color('black')
+
 
 
 
@@ -51,9 +57,21 @@ for i in range(300):
     turtle.pendown()
     turtle.stamp()
     screen.update()
-    filename = f"frame_{i+195:03d}.gif"
-    screen.getcanvas().postscript(file=f"frame_{i+195:03d}.ps")
-    image_files.append(filename)
+    #filename = f"frame_{i+195:03d}.gif"
+    #screen.getcanvas().postscript(file=f"frame_{i+195:03d}.ps")
+    #image_files.append(filename)
+
+letras.clear()
+letras.goto(0, 250)  
+letras.color("white")  
+letras.write("TKM <3", align="center", font=("Arial", 24, "normal"))
+letras.color('black')
+
+# time.sleep(2)
+
+# letras.clear()
+# turtle.clear()
+
 
 done()
 
