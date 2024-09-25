@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="a" type="number" name=""/>
+        <input  id="b" type="number" name=""/>
+        <button id="btn-calcular">calcular</button>
+        <p id="resultado">
+            
+        </p>
+
+    </div>
+    <script type="text/javascript">
+        var a=document.getElementById('a');
+        var b=document.getElementById('b')
+        var p=document.getElementById('resultado')
+        
+        var button=document.getElementById('btn-calcular')
+
+
+
+        button.onclick=function(){
+            //alert('El boton esta correctamente referenciado');
+            var num1=parseInt(a.value);
+            var num2=parseInt(b.value);
+            
+
+            var resultado= num1+num2;
+            //alert('El resultado es: '+resultado )
+            p.innerHTML='El resultado es: '+resultado;
+        };
+
+
+
+        
+        
+    </script>
+</body>
+</html>
